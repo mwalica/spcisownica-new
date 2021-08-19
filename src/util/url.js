@@ -1,0 +1,1 @@
+export const docsUrl = "http://www.spcisownica.edu.pl/dokumenty/";

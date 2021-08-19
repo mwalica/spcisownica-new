@@ -111,7 +111,6 @@ const List = styled.ol`
   line-height: 1.8;
   margin-left: 1.5em;
   margin-bottom: 1.5em;
-  padding: 0;
 `;
 
 const ListItem = styled.li``;

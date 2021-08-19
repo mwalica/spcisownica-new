@@ -4,6 +4,7 @@ import Patron from '../pages/patron/Patron';
 import Teachers from '../pages/teachers/Teachers';
 import Availability from '../pages/availability/Availability';
 import Library from '../pages/book/Library';
+import Recruit from '../pages/recruit/Recruit';
 
 const routes = [
   {
@@ -35,6 +36,11 @@ const routes = [
     path: '/availability',
     component: Availability,
     name: 'Deklaracja dostępności',
+  },
+  {
+    path: '/recruit',
+    component: Recruit,
+    name: 'Nabór',
   },
 
 ];

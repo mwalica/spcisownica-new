@@ -36,6 +36,11 @@ const SidebarInfo = () => {
               Biblioteka
             </Item>
           </NavItem>
+          <NavItem>
+            <Item to="/recruit" activeClassName="active">
+              Nabór
+            </Item>
+          </NavItem>
         </NavList>
       </Nav>
     </Wrapper>
