@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import styled, { ThemeProvider } from 'styled-components';
+import { Switch, Route } from 'react-router-dom';
 
-function App() {
+import theme from './styles/theme';
+
+import Header from './components/Header';
+
+import routes from './util/routes'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <Wrapper>
+        <Header />
+        {routes.map((route, i) => (<Route path={route.path} key={i} component={route.component} name={route.name}/>))}
+      </Wrapper>
+    </ThemeProvider>
   );
-}
+};
+
+const Wrapper = styled.div``;
 
 export default App;
+
