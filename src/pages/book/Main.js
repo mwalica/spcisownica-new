@@ -83,12 +83,6 @@ const Wrapper = styled.article`
     flex: 1 1 60%;
   }
 
-  hr {
-    border: 0;
-    border-bottom: 1px solid #efefef;
-    margin-bottom: 2em;
-  }
-
   p {
     color: ${({theme}) => theme.blue}
   }

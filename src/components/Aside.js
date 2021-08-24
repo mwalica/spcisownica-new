@@ -7,13 +7,24 @@ const Aside = () => {
       <Nav>
         <NavList>
           <NavItem>
-            <Item to="/info" activeClassName="active">
-              Do pobrania
+            <Item to="/adviceforparent" activeClassName="active">
+              Pedagog i Psycholog
             </Item>
           </NavItem>
           <NavItem>
-            <Item to="/history" activeClassName="active">
-              Historia
+            <Item to="/securedata" activeClassName="active">
+              Ochrona danych
+            </Item>
+          </NavItem>
+
+          <NavItem>
+            <Item to="/covid" activeClassName="active">
+              COVID-19
+            </Item>
+          </NavItem>
+          <NavItem>
+            <Item to="/availability" activeClassName="active">
+              Deklaracja dostępności
             </Item>
           </NavItem>
         </NavList>

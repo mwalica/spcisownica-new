@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import HeaderImg from '../asstes/header_img.jpg';
 
@@ -8,11 +9,14 @@ const HeroContent = () => {
       <Wrapper>
         <ContentLeft>
           <h1>
-            Szkoła Podstawowa <span>im. Jury Gajdzicy</span> w Cisownicy
+            Zespół Szkolno-Przedszkolny <span>im. Jury Gajdzicy</span> w
+            Cisownicy
           </h1>
           <div className="btn-group">
-            <button className="btn-primary">Informacje</button>
-            <button className="btn-outline">E-dziennik</button>
+            <Item className="btn-primary" to="/info">
+              Informacje
+            </Item>
+            <Item as="a" className="btn-outline" href="https://uonetplus.vulcan.net.pl/gminagoleszow" target="_blank" rel="noopener noreferrer">E-dziennik</Item>
           </div>
         </ContentLeft>
         <ContentRight>
@@ -58,10 +62,10 @@ const ContentLeft = styled.div`
     display: flex;
     justify-content: center;
     padding: 2em 0 2em;
-    @media(min-width: 1280px) {
-        justify-content: flex-start;
+    @media (min-width: 1280px) {
+      justify-content: flex-start;
     }
-    button {
+    /* button {
       cursor: pointer;
       padding: 0.6em 1.2em;
       border-radius: 0.25rem;
@@ -71,18 +75,7 @@ const ContentLeft = styled.div`
       letter-spacing: 0.08em;
       margin-right: 1.5em;
       text-transform: uppercase;
-    }
-    .btn-primary {
-      background-color: ${({ theme }) => theme.lightBlue};
-      border: 1px solid ${({ theme }) => theme.lightBlue};
-      color: ${({ theme }) => theme.white};
-    }
-
-    .btn-outline {
-      background: transparent;
-      color: ${({ theme }) => theme.lightBlue};
-      border: 1px solid ${({ theme }) => theme.lightBlue};
-    }
+    } */
   }
 `;
 
@@ -99,6 +92,36 @@ const ContentRight = styled.div`
     background-color: ${({ theme }) => theme.white};
     padding: 1em;
     box-shadow: ${({ theme }) => theme.xlShadow};
+  }
+`;
+
+const Item = styled(Link)`
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.6em 1.2em;
+  border-radius: 0.25rem;
+  box-shadow: ${({ theme }) => theme.mdShadow};
+  font-family: ${({ theme }) => theme.fontFamily};
+  font-size: 1em;
+  letter-spacing: 0.08em;
+  margin-right: 1.5em;
+  text-transform: uppercase;
+  transition: 0.4s all ease-in;
+
+  &:hover {
+    box-shadow: ${({ theme }) => theme.xlShadow};
+  }
+
+  &.btn-primary {
+    background-color: ${({ theme }) => theme.lightBlue};
+    border: 1px solid ${({ theme }) => theme.lightBlue};
+    color: ${({ theme }) => theme.white};
+  }
+
+  &.btn-outline {
+    background: transparent;
+    color: ${({ theme }) => theme.lightBlue};
+    border: 1px solid ${({ theme }) => theme.lightBlue};
   }
 `;
 

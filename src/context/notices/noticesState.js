@@ -30,7 +30,7 @@ const NoticesState = (props) => {
         getNotices,
       }}
     >
-      {PaymentResponse.children}
+      {props.children}
     </NoticesContext.Provider>
   );
 };

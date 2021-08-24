@@ -6,20 +6,29 @@ const Navbar = () => {
     <Wrapper>
       <Container>
         <NavMenu>
+        <NavItem>
+            <Item to="/" activeClassName="active">Home</Item>
+          </NavItem>
           <NavItem>
             <Item to="/info" activeClassName="active">Informacje</Item>
           </NavItem>
           <NavItem>
-            <Item to="/security" activeClassName="active">Bezpieczeństwo</Item>
+            <Item to="/secureschool" activeClassName="active">Bezpieczeństwo</Item>
           </NavItem>
           <NavItem>
-            <Item to="/parent" activeClassName="active">Rodzice</Item>
+            <Item to="/parentcouncil" activeClassName="active">Rodzice</Item>
           </NavItem>
           <NavItem>
-            <Item to="/document" activeClassName="active">Dokumenty</Item>
+            <Item to="/notices" activeClassName="active">Ogłoszenia</Item>
           </NavItem>
           <NavItem>
-            <Item to="/datasecurity" activeClassName="active">Ochrona danych</Item>
+            <Item to="/blogs" activeClassName="active">Wydarzenia</Item>
+          </NavItem>
+          <NavItem>
+            <Item to="/documents" activeClassName="active">Dokumenty</Item>
+          </NavItem>
+          <NavItem>
+            <Item to="/przedszkole" activeClassName="active">Przedszkole</Item>
           </NavItem>
         </NavMenu>
       </Container>

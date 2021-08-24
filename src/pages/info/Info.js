@@ -3,7 +3,7 @@ import Main from './Main'
 import SidebarInfo from '../../components/SidebarInfo'
 import Aside from '../../components/Aside';
 
-const History = () => {
+const Info = () => {
   return (
     <Section>
       <SidebarInfo />
@@ -14,4 +14,4 @@ const History = () => {
 };
 
 
-export default History;
+export default Info;

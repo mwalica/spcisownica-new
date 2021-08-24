@@ -1,12 +1,34 @@
+import Home from '../pages/home/Home';
 import Info from '../pages/info/Info';
 import History from '../pages/history/History';
 import Patron from '../pages/patron/Patron';
 import Teachers from '../pages/teachers/Teachers';
 import Availability from '../pages/availability/Availability';
 import Library from '../pages/book/Library';
+import SecureData from '../pages/securedata/SecureData';
 import Recruit from '../pages/recruit/Recruit';
+import Scholarship from '../pages/scholarship/Scholarship';
+import SecureSchool from '../pages/secureschool/SecureSchool';
+import SecureDigital from '../pages/securedigital/SecureDigital';
+import ParentCouncil from '../pages/parentcouncil/ParentCouncil';
+import ParentSubscription from '../pages/parentsubscription/ParentSubscription';
+import AdviceForParent from '../pages/adviceforparent/AdviceForParent';
+import AdvicePsychology from '../pages/advicepsychology/AdvicePsychology';
+import AdviceLink from '../pages/advicelink/AdviceLink';
+import Notices from '../pages/notices/Notices';
+import Blogs from '../pages/blogs/Blogs';
+import BlogPost from '../pages/blogpost/BlogPost';
+import Documents from '../pages/documents/Documents';
+import Covid from '../pages/covid/Covid';
+import UeProject from '../pages/ueproject/UeProject';
 
 const routes = [
+  {
+    path: '/',
+    component: Home,
+    name: 'Home',
+    exact: true,
+  },
   {
     path: '/info',
     component: Info,
@@ -42,9 +64,84 @@ const routes = [
     component: Recruit,
     name: 'Nabór',
   },
+  {
+    path: '/notices',
+    component: Notices,
+    name: 'Ogłoszenia',
+  },
+  {
+    path: '/scholarship',
+    component: Scholarship,
+    name: 'Stypendia',
+  },
+  {
+    path: '/secureschool',
+    component: SecureSchool,
+    name: 'Bezpieczna szkoła',
+  },
+  {
+    path: '/securedigital',
+    component: SecureDigital,
+    name: 'Bezpieczeństwo cyfrowe',
+  },
+  {
+    path: '/parentcouncil',
+    component: ParentCouncil,
+    name: 'Rada Rodziców',
+  },
+  {
+    path: '/parentsubscription',
+    component: ParentSubscription,
+    name: 'Składka na Radę Rodziców',
+  },
+  {
+    path: '/adviceforparent',
+    component: AdviceForParent,
+    name: 'Rady dla rodziców',
+  },
+  {
+    path: '/advicepsychology',
+    component: AdvicePsychology,
+    name: 'Rady psychologa',
+  },
+  {
+    path: '/advicelink',
+    component: AdviceLink,
+    name: 'Przydatne linki',
+  },
+  {
+    path: '/documents',
+    component: Documents,
+    name: 'Dokumenty szkoły',
+  },
+  {
+    path: '/securedata',
+    component: SecureData,
+    name: 'Ochrona danych',
+  },
+  {
+    path: '/covid',
+    component: Covid,
+    name: 'Covid-19',
+  },
+  {
+    path: '/ueproject',
+    component: UeProject,
+    name: 'Projekt UE',
+  }, 
+  {
+    path: '/blogs',
+    component: Blogs,
+    name: 'Wydarzenia',
+    exact: true
+  },
+  {
+    path: '/blogs/:slug',
+    component: BlogPost,
+    name: 'Wydarzenia',
+  }
 
 ];
-
 
 
 export default routes;

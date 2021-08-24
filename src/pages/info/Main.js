@@ -13,7 +13,7 @@ const Main = () => {
         </Author>
       </TitleHeader>
 
-      <TitleH5>Szkoła Podstawowa im. Jury Gajdzicy w Cisownicy</TitleH5>
+      <TitleH5>Zespół Szkolno-Przedszkolny im. Jury Gajdzicy w Cisownicy</TitleH5>
       <List>
         <ListItem>
           Adres: <span>Cisownica, ul. Cisowa 79, 43-440 Goleszów</span>

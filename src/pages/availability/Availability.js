@@ -1,17 +1,16 @@
 import Section from '../../styles/Section';
-import Main from './Main'
-import SidebarInfo from '../../components/SidebarInfo'
+import Main from './Main';
+import SidebarPsycho from '../../components/SidebarPsycho';
 import Aside from '../../components/Aside';
 
-const Info = () => {
+const AdviceLink = () => {
   return (
     <Section>
-      <SidebarInfo />
+      <SidebarPsycho />
       <Main />
       <Aside />
     </Section>
   );
 };
 
-
-export default Info;
+export default AdviceLink;

@@ -28,6 +28,12 @@ strong {
     color: #445c9b;
 }
 
+hr {
+    border: 0;
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 2em;
+  }
+
 `;
 
 export default GlobalStyle;

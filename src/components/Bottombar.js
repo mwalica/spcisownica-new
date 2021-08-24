@@ -8,7 +8,6 @@ import routes from '../util/routes';
 
 const Bottombar = () => {
   const { pathname } = useLocation();
-
   const [route] = routes.filter((route) => {
     return route.path === pathname;
   });
@@ -17,7 +16,7 @@ const Bottombar = () => {
   return (
     <Wrapper>
       <Sidebar />
-      <Mid><p><FontAwesomeIcon icon={faChevronRight} /> {route ? route.name : ""}</p></Mid>
+      <Mid><p><FontAwesomeIcon icon={faChevronRight} /> {route ? route.name : "Wydarzenia"}</p></Mid>
       <Sidebar />
     </Wrapper>
   );

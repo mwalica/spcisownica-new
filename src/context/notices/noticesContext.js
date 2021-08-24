@@ -1,5 +1,5 @@
 import {createContext} from 'react';
 
-const noticesContext = createContext();
+const postsContext = createContext();
 
-export default noticesContext;
+export default postsContext;

@@ -10,6 +10,7 @@ const Wrapper = styled.section`
   margin: 0 auto;
   width: 80%;
   max-width: 1280px;
+  min-height: 70vh;
   background-color: ${({theme}) => theme.white}
 `;
 
