@@ -6,10 +6,10 @@ const Notice = ({ notice }) => {
   return (
     <Wrapper>
       <TitleH6>{notice.title}</TitleH6>
-      <ReactMarkdown>{notice.Description}</ReactMarkdown>
+      <ReactMarkdown>{notice.description}</ReactMarkdown>
       <Figure>
-        {notice.Image.map((img) => (
-          <img key={img.id} src={img.url} alt={img.name} />
+        {notice.images.map((img) => (
+          <img key={img.url} src={img.url} alt={img.alt} />
         ))}
       </Figure>
       <hr />

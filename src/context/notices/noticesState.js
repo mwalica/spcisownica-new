@@ -1,10 +1,11 @@
 import { useReducer } from 'react';
-import axios from 'axios';
 
 import NoticesContext from './noticesContext';
 import noticesReducer from './noticesReducer';
 
-import { GET_NOTICES } from '../types';
+import { GET_NOTICES, DATO_TOKEN } from '../types';
+
+
 
 const NoticesState = (props) => {
   const initialState = {
@@ -15,12 +16,20 @@ const NoticesState = (props) => {
 
   //get notices
   const getNotices = async () => {
-    try {
-      const res = await axios.get('http://localhost:1337/notices');
-      dispatch({ type: GET_NOTICES, payload: res.data });
-    } catch (err) {
-      console.log(err);
-    }
+    await fetch('https://graphql.datocms.com', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${DATO_TOKEN}`,
+      },
+      body: JSON.stringify({
+        query: '{allNotices {id title description images {alt url}}}'
+      }),
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        dispatch({ type: GET_NOTICES, payload: res.data.allNotices });
+      })
+      .catch((err) => console.log(err));
   };
 
   return (

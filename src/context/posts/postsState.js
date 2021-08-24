@@ -1,10 +1,14 @@
 import { useReducer } from 'react';
-import axios from 'axios';
 
 import PostsContext from './postsContext';
 import postsReducer from './postsReducer';
 
-import { GET_POSTS, SET_CURRENT_POST, CLEAR_CURRENT_POST } from '../types';
+import {
+  GET_POSTS,
+  SET_CURRENT_POST,
+  CLEAR_CURRENT_POST,
+  DATO_TOKEN,
+} from '../types';
 
 const PostsState = (props) => {
   const initialState = {
@@ -15,13 +19,24 @@ const PostsState = (props) => {
   const [state, dispatch] = useReducer(postsReducer, initialState);
 
   //get posts
+
   const getPosts = async () => {
-    try {
-      const res = await axios.get('http://localhost:1337/blogs');
-      dispatch({ type: GET_POSTS, payload: res.data });
-    } catch (err) {
-      console.log(err);
-    }
+    await fetch('https://graphql.datocms.com', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${DATO_TOKEN}`,
+      },
+      body: JSON.stringify({
+        query:
+          '{allBlogs {id title date description author slug images {alt url} startImage {url alt} video {thumbnailUrl title}}}',
+      }),
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        console.log(res.data.allBlogs);
+        dispatch({ type: GET_POSTS, payload: res.data.allBlogs });
+      })
+      .catch((err) => console.log(err));
   };
 
   //set current post

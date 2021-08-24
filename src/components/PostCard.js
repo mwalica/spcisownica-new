@@ -23,13 +23,13 @@ const PostCard = ({ post }) => {
         </ImgConatiner>
         <ContentContainer>
           <div className="title-container">
-            <h4>{post.Title}</h4>
+            <h4>{post.title}</h4>
             <small>
-              {post.Date}, <span>{post.Author}</span>
+              {post.date}, <span>{post.author}</span>
             </small>
           </div>
 
-          <ReactMarkdown>{post.Description.slice(0, 200)}</ReactMarkdown>
+          <ReactMarkdown>{post.description.slice(0, 200)}</ReactMarkdown>
           <Container>
           <Link className="read-more" to={`blogs/${post.slug}`} onClick={detailHandler}>
             więcej &gt;

@@ -8,12 +8,12 @@ const Post = ({post}) => {
     return (
         <Wrapper>
            <TitleH6>
-               {post.Title}
+               {post.title}
            </TitleH6>
-           <ReactMarkdown>{post.Description}</ReactMarkdown>
+           <ReactMarkdown>{post.description}</ReactMarkdown>
            <Figure>
                 {post.Photo.map(img => (
-                    <img key={img.id} src={img.url} alt={img.name}/>
+                    <img key={img.url} src={img.url} alt={img.alt}/>
                 ))}
             </Figure>
             <hr />

@@ -25,12 +25,12 @@ const Main = () => {
   return (
     <Wrapper>
       <TitleHeader>
-        <TitleH3>{current.Title}</TitleH3>
+        <TitleH3>{current.title}</TitleH3>
       </TitleHeader>
-      <ReactMarkdown>{current.Description}</ReactMarkdown>
+      <ReactMarkdown>{current.description}</ReactMarkdown>
       <Figure>
-        {current.Photo.map((img) => (
-          <img key={img.id} src={img.url} alt={img.name} />
+        {current.images.map((img) => (
+          <img key={img.url} src={img.url} alt={img.alt} />
         ))}
       </Figure>
       <Container>
