@@ -12,7 +12,7 @@ const Notice = ({ notice }) => {
           <img key={img.url} src={img.url} alt={img.alt} />
         ))}
       </Figure>
-      <hr />
+      {/* <hr /> */}
     </Wrapper>
   );
 };

@@ -16,7 +16,15 @@ const HeroContent = () => {
             <Item className="btn-primary" to="/info">
               Informacje
             </Item>
-            <Item as="a" className="btn-outline" href="https://uonetplus.vulcan.net.pl/gminagoleszow" target="_blank" rel="noopener noreferrer">E-dziennik</Item>
+            <Item
+              as="a"
+              className="btn-outline"
+              href="https://uonetplus.vulcan.net.pl/gminagoleszow"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              E-dziennik
+            </Item>
           </div>
         </ContentLeft>
         <ContentRight>
@@ -43,12 +51,15 @@ const ContentLeft = styled.div`
   h1 {
     width: 100%;
     margin: 0;
-    font-size: 2.4em;
+    font-size: 2.2rem;
     font-weight: 400;
     line-height: 1.5;
     text-align: center;
     text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
     color: ${({ theme }) => theme.darkBlue};
+    @media (min-width: 1680px) {
+      font-size: 2.4rem;
+    }
     @media (min-width: 1280px) {
       text-align: left;
     }

@@ -28,7 +28,7 @@ const Navbar = () => {
             <Item to="/documents" activeClassName="active">Dokumenty</Item>
           </NavItem>
           <NavItem>
-            <Item to="/przedszkole" activeClassName="active">Przedszkole</Item>
+            <Item to="/preschools" activeClassName="active">Przedszkola</Item>
           </NavItem>
         </NavMenu>
       </Container>

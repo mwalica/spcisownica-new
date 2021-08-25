@@ -21,6 +21,11 @@ import BlogPost from '../pages/blogpost/BlogPost';
 import Documents from '../pages/documents/Documents';
 import Covid from '../pages/covid/Covid';
 import UeProject from '../pages/ueproject/UeProject';
+import Preschools from '../pages/preschools/Preschools';
+import Preschoolr from '../pages/preschoolr/Preschoolr';
+import PreschoolrTimetable from '../pages/preschoolrtimetable/PreschoolrTimetable';
+import PreschoolrRules from '../pages/preschoolrrules/PreschoolrRules';
+import PreschoolrDocument from '../pages/preschoolrdocument/PreschoolrDocument';
 
 const routes = [
   {
@@ -139,6 +144,31 @@ const routes = [
     path: '/blogs/:slug',
     component: BlogPost,
     name: 'Wydarzenia',
+  },
+  {
+    path: '/preschools',
+    component: Preschools,
+    name: 'Przedszkola',
+  },
+  {
+    path: '/preschoolr',
+    component: Preschoolr,
+    name: 'Przedszkola - Równia',
+  },
+  {
+    path: '/preschoolrtimetable',
+    component: PreschoolrTimetable,
+    name: 'Rozkład dnia',
+  },
+  {
+    path: '/preschoolrrules',
+    component: PreschoolrRules,
+    name: 'Zasady',
+  },
+  {
+    path: '/preschoolrdocument',
+    component: PreschoolrDocument,
+    name: 'Documenty',
   }
 
 ];

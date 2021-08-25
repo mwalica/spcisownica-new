@@ -1,12 +1,12 @@
 import Section from '../../styles/Section';
 import Main from './Main'
-import SidebarHome from '../../components/SidebarHome'
+import SidebarPreschoolr from '../../components/SidebarPreschoolr'
 import Aside from '../../components/Aside';
 
-const Home = () => {
+const PreschoolrTimetable = () => {
   return (
     <Section>
-      <SidebarHome />
+      <SidebarPreschoolr />
       <Main />
       <Aside />
     </Section>
@@ -14,4 +14,4 @@ const Home = () => {
 };
 
 
-export default Home;
+export default PreschoolrTimetable;

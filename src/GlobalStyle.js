@@ -4,6 +4,7 @@ import {createGlobalStyle} from 'styled-components';
 //  md: "768px"
 //  lg: "1024px"
 //  xl: "1280px"
+// xll: "1680px"
 
 const GlobalStyle = createGlobalStyle`
 *, *::before, *::after {

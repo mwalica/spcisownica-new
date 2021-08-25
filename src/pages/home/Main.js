@@ -33,10 +33,5 @@ const TitleHeader = styled.div`
   border-bottom: 1px solid #efefef;
 `;
 
-const Author = styled.small`
-  span {
-    color: ${({ theme }) => theme.author};
-  }
-`;
 
 export default Main;
