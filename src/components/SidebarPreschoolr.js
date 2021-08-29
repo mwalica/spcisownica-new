@@ -12,6 +12,11 @@ const SidebarHome = () => {
             </Item>
           </NavItem>
           <NavItem>
+            <Item to="/preschoolrblogs" activeClassName="active">
+              Wydarzenia
+            </Item>
+          </NavItem>
+          <NavItem>
             <Item to="/preschoolrtimetable" activeClassName="active">
               Rozkład dnia
             </Item>

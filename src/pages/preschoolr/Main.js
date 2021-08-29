@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import TitleH3 from '../../styles/TitleH3';
-import TitleH6 from '../../styles/TitleH6';
 import Paragraph from '../../styles/Paragraph';
 
 const Main = () => {
@@ -14,7 +13,7 @@ const Main = () => {
       </TitleHeader>
       <Paragraph>
         <strong>
-          Oddziały Przedszkolne ZSP im. Jury Gajdzicy w Cisownicy
+          Oddziały Przedszkolne ZSP w Cisownicy
         </strong>
         <br />
         Adres: <strong>Goleszów Równia, ul. Osiedlowa 17, 43-440 Goleszów</strong>

@@ -26,6 +26,8 @@ import Preschoolr from '../pages/preschoolr/Preschoolr';
 import PreschoolrTimetable from '../pages/preschoolrtimetable/PreschoolrTimetable';
 import PreschoolrRules from '../pages/preschoolrrules/PreschoolrRules';
 import PreschoolrDocument from '../pages/preschoolrdocument/PreschoolrDocument';
+import PreschoolrBlogs from '../pages/preschoolrblogs/PreschoolrBlogs';
+import PreschoolrBlogPost from '../pages/preschoolrblogpost/PreschoolrBlogPost';
 
 const routes = [
   {
@@ -169,7 +171,18 @@ const routes = [
     path: '/preschoolrdocument',
     component: PreschoolrDocument,
     name: 'Documenty',
-  }
+  },
+  {
+    path: '/preschoolrblogs',
+    component: PreschoolrBlogs,
+    name: 'Wydarzenia - przedszkole Równia',
+    exact: true
+  },
+  {
+    path: '/preschoolrblogs/:slug',
+    component: PreschoolrBlogPost,
+    name: 'Wydarzenia',
+  },
 
 ];
 

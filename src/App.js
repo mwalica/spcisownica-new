@@ -1,5 +1,3 @@
-
-
 import styled, { ThemeProvider } from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
 
@@ -12,28 +10,29 @@ import routes from './util/routes';
 
 import NoticesState from './context/notices/noticesState';
 import PostsState from './context/posts/postsState';
+import PreschoolrPostsState from './context/preschoolrposts/preschoolrPostsState';
 
 const App = () => {
-
-
   return (
     <ThemeProvider theme={theme}>
       <Wrapper>
         <NoticesState>
-        <PostsState>
-          <Header />
-          <Switch>
-            {routes.map((route, i) => (
-              <Route
-                path={route.path}
-                key={i}
-                component={route.component}
-                name={route.name}
-                exact={route.exact}
-              />
-            ))}
-          </Switch>
-          <Footer />
+          <PostsState>
+            <PreschoolrPostsState>
+              <Header />
+              <Switch>
+                {routes.map((route, i) => (
+                  <Route
+                    path={route.path}
+                    key={i}
+                    component={route.component}
+                    name={route.name}
+                    exact={route.exact}
+                  />
+                ))}
+              </Switch>
+              <Footer />
+            </PreschoolrPostsState>
           </PostsState>
         </NoticesState>
       </Wrapper>

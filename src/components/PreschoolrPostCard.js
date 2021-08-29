@@ -4,22 +4,25 @@ import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
 import { Link } from 'react-router-dom';
 
+import School from '../asstes/school10.jpg'
 
-import PostsContext from '../context/posts/postsContext';
 
-const PostCard = ({ post }) => {
-  const postsContext = useContext(PostsContext);
-  const { setCurrentPost } = postsContext;
+import PreschoolrPostsContext from '../context/preschoolrposts/preschoolrPostsContext';
+
+const PreschoolrPostCard = ({ post }) => {
+  const preschoolrPostsContext = useContext(PreschoolrPostsContext);
+  const { setCurrentPost } = preschoolrPostsContext;
 
   const detailHandler = () => {
     setCurrentPost(post);
   };
-
+;
+console.log(post.startImage);
   return (
     <Wrapper>
       <Card>
         <ImgConatiner>
-          <img src={post.startImage.url} alt="wydarzenia" />
+         {!post.startImage ? (<img src={School} alt="wydarzenia"/>) : (<img src={post.startImage.url} alt="wydarzenia" />)} 
         </ImgConatiner>
         <ContentContainer>
           <div className="title-container">
@@ -31,7 +34,7 @@ const PostCard = ({ post }) => {
 
           <ReactMarkdown>{post.description.slice(0, 200)}</ReactMarkdown>
           <Container>
-          <Link className="read-more" to={`blogs/${post.slug}`} onClick={detailHandler}>
+          <Link className="read-more" to={`preschoolrblogs/${post.slug}`} onClick={detailHandler}>
             więcej &gt;
           </Link>
           </Container>
@@ -111,4 +114,4 @@ display: flex;
 justify-content: flex-start;
 `;
 
-export default PostCard;
+export default PreschoolrPostCard;

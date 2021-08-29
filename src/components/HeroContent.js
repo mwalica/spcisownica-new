@@ -9,8 +9,7 @@ const HeroContent = () => {
       <Wrapper>
         <ContentLeft>
           <h1>
-            Zespół Szkolno-Przedszkolny <span>im. Jury Gajdzicy</span> w
-            Cisownicy
+            <span>Zespół Szkolno-Przedszkolny</span> w Cisownicy
           </h1>
           <div className="btn-group">
             <Item className="btn-primary" to="/info">
