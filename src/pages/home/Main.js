@@ -10,7 +10,7 @@ const Main = () => {
       <TitleHeader>
         <TitleH3>Ogłoszenia</TitleH3>
       </TitleHeader>
-      <Notices amount={1} />
+      <Notices amount={2} />
       <TitleHeader>
         <TitleH3>Wydarzenia</TitleH3>
       </TitleHeader>

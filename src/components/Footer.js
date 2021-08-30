@@ -6,8 +6,7 @@ const Footer = () => {
     <Wrapper>
       <Container>
         <p>
-          {new Date().getFullYear()} &copy; Zespół Szkolno-Przedszkolny im. Jury
-          Gajdzicy w Cisownicy
+          {new Date().getFullYear()} &copy; Zespół Szkolno-Przedszkolny w Cisownicy
         </p>
       </Container>
     </Wrapper>
