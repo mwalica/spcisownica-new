@@ -4,8 +4,7 @@ import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
 import { Link } from 'react-router-dom';
 
-import School from '../asstes/school10.jpg'
-
+import School from '../asstes/school10.jpg';
 
 import PreschoolrPostsContext from '../context/preschoolrposts/preschoolrPostsContext';
 
@@ -16,29 +15,35 @@ const PreschoolrPostCard = ({ post }) => {
   const detailHandler = () => {
     setCurrentPost(post);
   };
-;
-console.log(post.startImage);
+  console.log(post.startImage);
   return (
     <Wrapper>
       <Card>
         <ImgConatiner>
-         {!post.startImage ? (<img src={School} alt="wydarzenia"/>) : (<img src={post.startImage.url} alt="wydarzenia" />)} 
+          {!post.startImage ? (
+            <img src={School} alt="wydarzenia" />
+          ) : (
+            <img src={post.startImage.url} alt="wydarzenia" />
+          )}
         </ImgConatiner>
         <ContentContainer>
           <div className="title-container">
             <h4>{post.title}</h4>
             <small>
-              {post.date && (`${post.date},`)} <span>{post.author}</span>
+              {post.date && `${post.date},`} <span>{post.author}</span>
             </small>
           </div>
 
           <ReactMarkdown>{post.description.slice(0, 200)}</ReactMarkdown>
           <Container>
-          <Link className="read-more" to={`preschoolrblogs/${post.slug}`} onClick={detailHandler}>
-            więcej &gt;
-          </Link>
+            <Link
+              className="read-more"
+              to={`preschoolrblogs/${post.slug}`}
+              onClick={detailHandler}
+            >
+              więcej &gt;
+            </Link>
           </Container>
-         
         </ContentContainer>
       </Card>
     </Wrapper>
@@ -107,11 +112,21 @@ const ContentContainer = styled.div`
       box-shadow: ${({ theme }) => theme.xlShadow};
     }
   }
+
+  ul {
+    padding-left: 0.8em;
+    list-style: circle;
+    line-height: 1.8;
+  }
+  ol {
+    padding-left: 0.8em;
+    line-height: 1.8;
+  }
 `;
 
 const Container = styled.div`
-display: flex;
-justify-content: flex-start;
+  display: flex;
+  justify-content: flex-start;
 `;
 
 export default PreschoolrPostCard;

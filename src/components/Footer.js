@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import Paragraph from '../styles/Paragraph';
 
 const Footer = () => {
   return (

@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { docsUrl } from '../util/url';
 
 const SidebarHome = () => {
   return (
@@ -9,6 +10,16 @@ const SidebarHome = () => {
           <NavItem>
             <Item to="/info" activeClassName="active">
               O szkole
+            </Item>
+          </NavItem>
+          <NavItem>
+            <Item
+              as="a"
+              href={`${docsUrl}plan_lekcji_2021_2022.pdf`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Plan Lekcji
             </Item>
           </NavItem>
           <NavItem>

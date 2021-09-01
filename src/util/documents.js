@@ -40,5 +40,11 @@ export const docs = [
         description: 'Procedury biblioteka',
         name: 'procedury_covid_biblioteka.pdf',
         type: 'covid',
+      },
+      {
+        id: '8',
+        description: 'Plan lekcji',
+        name: 'plan_lekcji_2021_2022.pdf',
+        type: 'school',
       }
   ];

@@ -29,6 +29,8 @@ import PreschoolrDocument from '../pages/preschoolrdocument/PreschoolrDocument';
 import PreschoolrBlogs from '../pages/preschoolrblogs/PreschoolrBlogs';
 import PreschoolrBlogPost from '../pages/preschoolrblogpost/PreschoolrBlogPost';
 
+import Preschoolc from '../pages/preschoolc/Preschoolc';
+
 const routes = [
   {
     path: '/',
@@ -155,7 +157,7 @@ const routes = [
   {
     path: '/preschoolr',
     component: Preschoolr,
-    name: 'Przedszkola - Równia',
+    name: 'Przedszkole - Równia',
   },
   {
     path: '/preschoolrtimetable',
@@ -183,6 +185,22 @@ const routes = [
     component: PreschoolrBlogPost,
     name: 'Wydarzenia',
   },
+  {
+    path: '/preschoolc',
+    component: Preschoolc,
+    name: 'Przedszkole - Cisownica',
+  },
+  // {
+  //   path: '/preschoolcblogs',
+  //   component: PreschoolcBlogs,
+  //   name: 'Wydarzenia - przedszkole Cisownica',
+  //   exact: true
+  // },
+  // {
+  //   path: '/preschoolcblogs/:slug',
+  //   component: PreschoolcBlogPost,
+  //   name: 'Wydarzenia',
+  // }
 
 ];
 

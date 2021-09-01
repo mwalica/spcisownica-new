@@ -10,7 +10,7 @@ const Main = () => {
         <TitleH3>Przedszkola</TitleH3>
       </TitleHeader>
       <ButtonGroup>
-        {/* <Button>Przedszkole - Cisownica</Button> */}
+        <Button to="/preschoolc">Przedszkole - Cisownica</Button>
         <Button to="/preschoolr">Przedszkole - Równia</Button>
       </ButtonGroup>
     </Wrapper>
