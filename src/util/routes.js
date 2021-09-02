@@ -30,6 +30,8 @@ import PreschoolrBlogs from '../pages/preschoolrblogs/PreschoolrBlogs';
 import PreschoolrBlogPost from '../pages/preschoolrblogpost/PreschoolrBlogPost';
 
 import Preschoolc from '../pages/preschoolc/Preschoolc';
+import PreschoolcBlogs from '../pages/preschoolcblogs/PreschoolcBlogs';
+import PreschoolcBlogPost from '../pages/preschoolcblogpost/PreschoolcBlogPost';
 
 const routes = [
   {
@@ -137,12 +139,12 @@ const routes = [
     path: '/ueproject',
     component: UeProject,
     name: 'Projekt UE',
-  }, 
+  },
   {
     path: '/blogs',
     component: Blogs,
     name: 'Wydarzenia',
-    exact: true
+    exact: true,
   },
   {
     path: '/blogs/:slug',
@@ -178,7 +180,7 @@ const routes = [
     path: '/preschoolrblogs',
     component: PreschoolrBlogs,
     name: 'Wydarzenia - przedszkole Równia',
-    exact: true
+    exact: true,
   },
   {
     path: '/preschoolrblogs/:slug',
@@ -190,19 +192,17 @@ const routes = [
     component: Preschoolc,
     name: 'Przedszkole - Cisownica',
   },
-  // {
-  //   path: '/preschoolcblogs',
-  //   component: PreschoolcBlogs,
-  //   name: 'Wydarzenia - przedszkole Cisownica',
-  //   exact: true
-  // },
-  // {
-  //   path: '/preschoolcblogs/:slug',
-  //   component: PreschoolcBlogPost,
-  //   name: 'Wydarzenia',
-  // }
-
+  {
+    path: '/preschoolcblogs',
+    component: PreschoolcBlogs,
+    name: 'Wydarzenia - przedszkole Cisownica',
+    exact: true,
+  },
+  {
+    path: '/preschoolcblogs/:slug',
+    component: PreschoolcBlogPost,
+    name: 'Wydarzenia',
+  },
 ];
-
 
 export default routes;

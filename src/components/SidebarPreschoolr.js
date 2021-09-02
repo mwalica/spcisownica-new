@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
-const SidebarHome = () => {
+const SidebarPreschoolr = () => {
   return (
     <Wrapper>
       <Nav>
@@ -70,4 +70,4 @@ const Item = styled(NavLink)`
   }
 `;
 
-export default SidebarHome;
+export default SidebarPreschoolr;

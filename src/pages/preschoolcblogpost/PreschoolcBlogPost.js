@@ -1,17 +1,17 @@
 import Section from '../../styles/Section';
 import Main from './Main';
-import SidebarPreschoolr from '../../components/SidebarPreschoolr'
+import SidebarPreschoolc from '../../components/SidebarPreschoolc'
 import Aside from '../../components/Aside';
 
-const PreschoolrBlogPost = () => {
+const PreschoolcBlogPost = () => {
 
   return (
     <Section>
-      <SidebarPreschoolr />
+      <SidebarPreschoolc />
       <Main />
       <Aside />
     </Section>
   );
 };
 
-export default PreschoolrBlogPost;
+export default PreschoolcBlogPost;

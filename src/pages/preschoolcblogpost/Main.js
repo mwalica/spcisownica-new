@@ -6,17 +6,17 @@ import ReactMarkdown from 'react-markdown';
 import styled from 'styled-components';
 import TitleH3 from '../../styles/TitleH3';
 
-import PreschoolrPostsContext from '../../context/preschoolrposts/preschoolrPostsContext';
+import PreschoolcPostsContext from '../../context/preschoolcposts/preschoolcPostsContext';
 
 const Main = () => {
-  const preschoolrPostsContext = useContext(PreschoolrPostsContext);
-  const { current } = preschoolrPostsContext;
+  const preschoolcPostsContext = useContext(PreschoolcPostsContext);
+  const { current } = preschoolcPostsContext;
 
   if (!current) {
     return (
       <Wrapper>
         <Container>
-          <Link className="back" to="/preschoolrblogs">Powrót</Link>
+          <Link className="back" to="/preschoolcblogs">Powrót</Link>
         </Container>
       </Wrapper>
     );
@@ -34,7 +34,7 @@ const Main = () => {
         ))}
       </Figure>
       <Container>
-        <Link className="back" to="/preschoolrblogs">
+        <Link className="back" to="/preschoolcblogs">
           &lt; Powrót
         </Link>
       </Container>

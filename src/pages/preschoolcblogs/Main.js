@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import TitleH3 from '../../styles/TitleH3';
 
-import PreschoolrPosts from '../../components/PreschoolrPosts'
+import PreschoolcPosts from '../../components/PreschoolcPosts'
 
 const Main = () => {
   return (
@@ -9,7 +9,7 @@ const Main = () => {
       <TitleHeader>
         <TitleH3>Wydarzenia</TitleH3>
       </TitleHeader>
-      <PreschoolrPosts />
+      <PreschoolcPosts />
     </Wrapper>
   );
 };

@@ -12,18 +12,26 @@ const Main = () => {
         </Author>
       </TitleHeader>
       <Paragraph>
-        <strong>
-          Oddziały Przedszkolne ZSP w Cisownicy
-        </strong>
+        <strong>Oddziały Przedszkolne ZSP w Cisownicy</strong>
         <br />
-        Adres: <strong>Goleszów Równia, ul. Osiedlowa 17, 43-440 Goleszów</strong>
+        Adres:{' '}
+        <strong>Goleszów Równia, ul. Osiedlowa 17, 43-440 Goleszów</strong>
         <br />
         Telefon: <strong>33 8528256</strong>
       </Paragraph>
       <Paragraph>
-      Realizowany program: <br />Nasze przedszkole. Program edukacji przedszkolnej wspomagający rozwój aktywności dzieci. Grupa MAC S.A. 2017
+        Realizowany programy: <br />
+        <strong>
+          Rozwój - wychowanie - edukacja. Program wychowania przedszkolnego.
+        </strong>{' '}<br />
+        Anna Stalmach - Tkacz, Karina Mucha , Nowa Era
+        <br />
+        <strong>
+          Program wychowania przedszkolnego Wokół Przedszkola
+        </strong>{' '}<br />
+        Małgorzata Kwaśniewska, Joanna Lendzion, Wiesława Żaba-Żabińska, MAC
+        Edukacja
       </Paragraph>
-
     </Wrapper>
   );
 };

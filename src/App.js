@@ -11,6 +11,7 @@ import routes from './util/routes';
 import NoticesState from './context/notices/noticesState';
 import PostsState from './context/posts/postsState';
 import PreschoolrPostsState from './context/preschoolrposts/preschoolrPostsState';
+import PreschoolcPostsState from './context/preschoolcposts/preschoolcPostsState';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <NoticesState>
           <PostsState>
             <PreschoolrPostsState>
+            <PreschoolcPostsState>
               <Header />
               <Switch>
                 {routes.map((route, i) => (
@@ -32,6 +34,7 @@ const App = () => {
                 ))}
               </Switch>
               <Footer />
+              </PreschoolcPostsState>
             </PreschoolrPostsState>
           </PostsState>
         </NoticesState>
