@@ -27,6 +27,11 @@ const Aside = () => {
               Deklaracja dostępności
             </Item>
           </NavItem>
+          <NavItem>
+            <Link href="http://spcisownica.edu.pl/dokumenty/statut.pdf" target="_blank" rel="noopener noreferrer">
+              Statut
+            </Link>
+          </NavItem>
         </NavList>
       </Nav>
     </Wrapper>
@@ -66,5 +71,19 @@ const Item = styled(NavLink)`
     color: ${({ theme }) => theme.darkBlue};
   }
 `;
+
+const Link = styled.a`
+  text-decoration: none;
+  color: ${({ theme }) => theme.darkGray};
+  text-transform: uppercase;
+  transition: 0.4s all ease-in;
+  &:hover {
+    color: ${({ theme }) => theme.darkBlue};
+  }
+  &.active {
+    color: ${({ theme }) => theme.darkBlue};
+  }
+`;
+
 
 export default Aside;

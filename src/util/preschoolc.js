@@ -1,7 +1,7 @@
 export const timetable = [
     {
       id: '1',
-      time: '8.00 – 8.30',
+      time: '6.30 - 8.00',
       description: 'Schodzenie się dzieci do przedszkola.',
       type: 'tygryski',
     },
@@ -122,26 +122,7 @@ export const timetable = [
       
   ];
 
-  export const documents = [
-    {
-      id: '1',
-      description: 'Klauzula dotycząca udostępniania wizerunku',
-      name: 'klauzula_wizerunek_p.pdf',
-      type: 'clauses',
-    },
-    {
-      id: '2',
-      description: 'Klauzula dla rodziców/opiekunów prawnych dzieci',
-      name: 'klauzula_opiekunow_p.pdf',
-      type: 'clauses',
-    },
-    {
-      id: '3',
-      description: 'Klauzula dla osób upoważnionych przez rodzica/opiekuna prawnego do odbioru dziecka',
-      name: 'klauzula_odbior_p.pdf',
-      type: 'clauses',
-    }
-  ];
+  
   
 
 	

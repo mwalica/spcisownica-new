@@ -16,6 +16,20 @@ const SidebarPreschoolc = () => {
               Wydarzenia
             </Item>
           </NavItem>
+          <NavItem>
+            <Link
+              href="http://spcisownica.edu.pl/dokumenty/rozklad_dnia_cisownica.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Rozkład dnia
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link href="http://spcisownica.edu.pl/dokumenty/statut_przedszkole_publiczne_cisownica.pdf" target="_blank" rel="noopener noreferrer">
+              Statut przedszkola
+            </Link>
+          </NavItem>
         </NavList>
       </Nav>
     </Wrapper>
@@ -43,6 +57,19 @@ const NavItem = styled.li`
 `;
 
 const Item = styled(NavLink)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.darkGray};
+  text-transform: uppercase;
+  transition: 0.4s all ease-in;
+  &:hover {
+    color: ${({ theme }) => theme.darkBlue};
+  }
+  &.active {
+    color: ${({ theme }) => theme.darkBlue};
+  }
+`;
+
+const Link = styled.a`
   text-decoration: none;
   color: ${({ theme }) => theme.darkGray};
   text-transform: uppercase;
