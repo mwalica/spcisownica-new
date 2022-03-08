@@ -37,11 +37,6 @@ const SidebarHome = () => {
               Stypendia
             </Item>
           </NavItem>
-          <NavItem>
-            <Item to="/ueproject" activeClassName="active">
-              Projekt UE
-            </Item>
-          </NavItem>
         </NavList>
       </Nav>
     </Wrapper>

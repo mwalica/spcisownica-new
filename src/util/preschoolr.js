@@ -140,6 +140,36 @@ export const timetable = [
       description: 'Klauzula dla osób upoważnionych przez rodzica/opiekuna prawnego do odbioru dziecka',
       name: 'klauzula_odbior_p.pdf',
       type: 'clauses',
+    },
+    {
+      id: '4',
+      description: 'Zasady naboru 2022/2023',
+      name: 'zasady_naboru_2022_2023.pdf',
+      type: 'preschool',
+    },
+    {
+      id: '5',
+      description: 'Zarządzenie w sprawie powołania komisji rekrutacyjnej',
+      name: 'zarzadzenie_w_sprawie_powolania_komisji_rekrutacyjnej_przedszkola.pdf',
+      type: 'preschool',
+    },
+    {
+      id: '6',
+      description: 'Zarządzenie w sprawie wprowadzenia regulaminu rekrutacji dzieci',
+      name: 'zarzadzenie_w_sprawie_wprowadzenia_regulaminu_rekrutacji_dzieci.pdf',
+      type: 'preschool',
+    },
+    {
+      id: '7',
+      description: 'Zarządzenie w sprawie określenia terminów postępowania rekrutacyjnego',
+      name: 'zarzadzenie_w _sprawie_okreslenia_terminiow_postepowania_rekrutacyjnego.pdf',
+      type: 'preschool',
+    },
+    {
+      id: '8',
+      description: 'Regulamin rekrutacji dzieci',
+      name: 'regulamin_rekrutacji_dzieci.pdf',
+      type: 'preschool',
     }
   ];
   

@@ -1,14 +1,14 @@
 import Section from '../../styles/Section';
 import Main from './Main'
 import SidebarPreschoolr from '../../components/SidebarPreschoolr'
-import Aside from '../../components/Aside';
+import AsidePreschoolR from '../../components/AsidePreschoolR';
 
 const Preschoolr = () => {
   return (
     <Section>
       <SidebarPreschoolr />
       <Main />
-      <Aside />
+      <AsidePreschoolR />
     </Section>
   );
 };

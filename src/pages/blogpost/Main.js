@@ -103,7 +103,7 @@ const Figure = styled.figure`
   img {
     overflow: hidden;
     display: block;
-    width: 60%;
+    width: 80%;
     padding: 0.4em;
     box-shadow: ${({ theme }) => theme.xlShadow};
     margin-bottom: 0.5em;

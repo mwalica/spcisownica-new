@@ -35,6 +35,11 @@ const Navbar = () => {
             </Item>
           </NavItem>
           <NavItem>
+            <Item to="/recruit" activeClassName="active">
+              Nabór
+            </Item>
+          </NavItem>
+          <NavItem>
             <Item to="/blogs" activeClassName="active">
               Wydarzenia
             </Item>
@@ -96,7 +101,7 @@ const Item = styled(NavLink)`
   padding: 0.4em 0.3em;
   border-radius: 6px;
 
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     letter-spacing: 0.05rem;
     padding: 0.4em 0.8em;
   }

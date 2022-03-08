@@ -1,12 +1,12 @@
 import Section from '../../styles/Section';
 import Main from './Main'
-import SidebarPreschoolr from '../../components/SidebarPreschoolr'
+import SidebarPreschoolc from '../../components/SidebarPreschoolc'
 import AsidePreschoolR from '../../components/AsidePreschoolR';
 
-const PreschoolrDocument = () => {
+const PreschoolcDocument = () => {
   return (
     <Section>
-      <SidebarPreschoolr />
+      <SidebarPreschoolc />
       <Main />
       <AsidePreschoolR />
     </Section>
@@ -14,4 +14,4 @@ const PreschoolrDocument = () => {
 };
 
 
-export default PreschoolrDocument;
+export default PreschoolcDocument;

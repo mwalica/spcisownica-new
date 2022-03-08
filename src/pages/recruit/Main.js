@@ -4,15 +4,16 @@ import TitleH3 from '../../styles/TitleH3';
 
 import { docsUrl } from '../../util/url';
 import { recruitDocs } from '../../util/recruit';
+import { documents } from '../../util/preschoolc';
 
 
 const Main = () => {
 
-const [tabs, setTabs] = useState(true);
+const [tabs, setTabs] = useState(false);
 
 
 
-const table = tabs ? recruitDocs.filter( doc => doc.type === "school") : recruitDocs.filter( doc => doc.type === "preschool")
+const table = tabs ? recruitDocs.filter( doc => doc.type === "school") : documents.filter( doc => doc.type === "preschool")
 
   return (
     <Wrapper>

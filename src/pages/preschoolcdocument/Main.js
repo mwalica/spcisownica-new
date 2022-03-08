@@ -3,7 +3,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import TitleH3 from '../../styles/TitleH3';
 
-import { documents } from '../../util/preschoolr';
+import { documents } from '../../util/preschoolc';
 import { docsUrl } from '../../util/url';
 
 const Main = () => {
@@ -32,9 +32,9 @@ const Main = () => {
           <li className={tabs === "preschool" ? 'is-active' : ''} onClick={() => setTabs("preschool")}>
             Nabór do przeszkola
           </li>
-          <li className={tabs === "clauses" ? 'is-active' : ''} onClick={() => setTabs("clauses")}>
+          {/* <li className={tabs === "clauses" ? 'is-active' : ''} onClick={() => setTabs("clauses")}>
             Klauzule przedszkole
-          </li>
+          </li> */}
         </ul>
       </Tabs>
 

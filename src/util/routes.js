@@ -21,7 +21,9 @@ import BlogPost from '../pages/blogpost/BlogPost';
 import Documents from '../pages/documents/Documents';
 import Covid from '../pages/covid/Covid';
 import UeProject from '../pages/ueproject/UeProject';
+
 import Preschools from '../pages/preschools/Preschools';
+
 import Preschoolr from '../pages/preschoolr/Preschoolr';
 import PreschoolrTimetable from '../pages/preschoolrtimetable/PreschoolrTimetable';
 import PreschoolrRules from '../pages/preschoolrrules/PreschoolrRules';
@@ -32,6 +34,7 @@ import PreschoolrBlogPost from '../pages/preschoolrblogpost/PreschoolrBlogPost';
 import Preschoolc from '../pages/preschoolc/Preschoolc';
 import PreschoolcBlogs from '../pages/preschoolcblogs/PreschoolcBlogs';
 import PreschoolcBlogPost from '../pages/preschoolcblogpost/PreschoolcBlogPost';
+import PreschoolcDocument from '../pages/preschoolcdocument/PreschoolcDocument';
 
 const routes = [
   {
@@ -174,7 +177,7 @@ const routes = [
   {
     path: '/preschoolrdocument',
     component: PreschoolrDocument,
-    name: 'Documenty',
+    name: 'Dokumenty',
   },
   {
     path: '/preschoolrblogs',
@@ -203,6 +206,11 @@ const routes = [
     component: PreschoolcBlogPost,
     name: 'Wydarzenia',
   },
+  {
+    path: '/preschoolcdocument',
+    component: PreschoolcDocument,
+    name: 'Dokumenty',
+  }
 ];
 
 export default routes;
